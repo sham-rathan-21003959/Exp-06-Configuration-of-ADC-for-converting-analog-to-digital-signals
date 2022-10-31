@@ -1,20 +1,22 @@
 # Exp-06-Configuration-of-ADC-for-converting-analog-to-digital-signals
 
 
-## Name :	
-## Roll no:
+## Name :	S.Sham Rathan
+## Roll no: 212221230093
 ## Date of experiment : 
   
   
-## Aim: To configure internal ADC for   LPC2148 ARM 7 and write a code for displaying the values varying from 0v to 3.3v to its equivalent digital values 
-## Components required: Proteus ISIS professional suite, Kiel μ vision 5 Development environment 
+### Aim:
+To configure internal ADC for   LPC2148 ARM 7 and write a code for displaying the values varying from 0v to 3.3v to its equivalent digital values 
+### Components required:
+Proteus ISIS professional suite, Kiel μ vision 5 Development environment 
  
  ![image](https://user-images.githubusercontent.com/36288975/198947663-2d75f694-880a-4bc0-be67-8c2d4125fdb6.png)
 
 Figure-01 ADC pins in LPC2148 ARM 7 controller 
 
 
- ## Theory 
+ ### Theory :
 Analog to Digital Converter (ADC) is used to convert analog signal into digital form. LPC2148 has two inbuilt 10-bit ADC i.e. ADC0 & ADC1.
 •	ADC0 has 6 channels &ADC1 has 8 channels.
 •	Hence, we can connect 6 distinct types of input analog signals to ADC0 and 8 distinct types of input analog signals to ADC1.
@@ -31,7 +33,7 @@ These are the power and ground pins for ADC. These should be same as VDD & VSS.
 Let’s see the ADC registers which are used to control and monitors the ADC operation.
 Here, we will see ADC0 registers and their configurations. ADC1 has similar registers and can be configured in a similar manner.
  
-## ADC0 Registers 
+### ADC0 Registers 
 1.  AD0CR (ADC0 Control Register)
 •	AD0CR is a 32-bit register.
 •	This register must be written to select the operating mode before A/D conversion can occur.
@@ -164,7 +166,7 @@ This bit is set to 1 when an A/D conversion completes. It is cleared when this r
  
 
 
-Procedure:
+### Procedure:
 Steps for Analog to Digital Conversion
 1.	Configure the ADxCR (ADC Control Register) according to the need of application.
 2.	Start ADC conversion by writing appropriate value to START bits in ADxCR. (Example, writing 001 to START bits of the register 26:24, conversion is started immediately).
@@ -176,7 +178,11 @@ ADxDRy. E.g. AD0DR1 contains ADC result of channel 1 of ADC0.
 
 Figure -08 Circuit diagram of interfacing an POT with ADC input pin 
 
-## Kiel - Program 
+### Kiel - Program 
+```
+
+
+```
  
 ## Tabulations and graph 
 SL NO	% OF POT VALUE	ADC VALUE
@@ -199,10 +205,17 @@ SL NO	% OF POT VALUE	ADC VALUE
 Figure -09 graph between % of pot(1Kohm) values and ADC 
 
 
-Result :
-Configuring an ADC and the input values are displayed on LCD screen 
 
-Output screen shots :
+
+## Output screen shots :
+![6(i)](https://user-images.githubusercontent.com/93587823/199064003-5ef5da34-bc5a-46ab-bbfe-5322111d4463.png)
+
+![6(ii)](https://user-images.githubusercontent.com/93587823/199064082-6721531a-5748-449c-9ab2-7cf95ec25159.png)
+
+
+## Result :
+
+Configuring an ADC and the input values are displayed on LCD screen 
 
 
 

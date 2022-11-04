@@ -1,7 +1,11 @@
 # Exp-06-Configuration-of-ADC-for-converting-analog-to-digital-signal
 
 Name :	S.Sham Rathan
+
+
 Roll no: 212221230093
+
+
 Date of experiment : 27.10.20222
    
 ### Aim:
